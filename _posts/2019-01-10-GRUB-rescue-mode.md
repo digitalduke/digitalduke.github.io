@@ -41,7 +41,7 @@ grub rescue> normal
 
 Последним шагом, после загрузки системы, необходимо восстановить загрузчик grub:
 
-```shell
+```
  sudo grub-install /dev/sda
  sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
