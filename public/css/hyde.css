@@ -98,6 +98,9 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+.sidebar .small {
+  font-size: small;
+}
 
 /* Sticky sidebar
  *
