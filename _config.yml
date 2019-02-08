@@ -2,12 +2,12 @@ title: digitalduke
 tagline: 'личный блог о технологиях'
 description: 'личный блог о технологиях'
 
-url: https://digitalduke.blog
-baseurl: https://digitalduke.blog
+url: http://digitalduke.blog
+baseurl: http://digitalduke.blog
 
 author:
   name: George P.
-  url: https://digitalduke.blog
+  url: http://digitalduke.blog
 
 paginate: 5
 
