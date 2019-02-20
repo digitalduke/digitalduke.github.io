@@ -24,7 +24,7 @@ kramdown:
 sass:
   style: :expanded
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
 
