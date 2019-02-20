@@ -27,6 +27,7 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 
 exclude:
   - Gemfile
