@@ -1,11 +1,11 @@
 ---
 layout: page
-title: About
+title: Обо мне
 permalink: /about/
 ---
 
 Some information about me. Sorry, coming soon...
 
-### Contact me
+### Контактная информация
 
 [digitalduke@gmail.com](mailto:digitalduke@gmail.com)
