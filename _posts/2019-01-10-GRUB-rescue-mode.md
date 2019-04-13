@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GRUB rescue mode
+commentIssueId: 24
 ---
 
 В данной статье кратко описан личный опыт восстановления GRUB после установки Windows 10 в качестве второй ОС.
