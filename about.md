@@ -4,8 +4,16 @@ title: Обо мне
 permalink: /about/
 ---
 
-Some information about me. Sorry, coming soon...
+Меня зовут Егор Пирогов. Я full-stack веб-разработчик из Челябинска (Россия). В настоящее время занят в проекте [онлайн-типографии «100 Макетов»](https://www.100maketov.ru). В прошлом почти десять лет работал в телекоммуникационной отрасли пройдя путь от рядового инженера до руководителя проектов и помощника генерального директора. 
 
-### Контактная информация
+Cфера моих интересов в настоящее время это — веб-сервисы, управление разработкой, продуктовый менеджмент и программное обеспечение с открытым исходным кодом.
 
-[digitalduke@gmail.com](mailto:digitalduke@gmail.com)
+### Выступления и статьи
+
+**2019 03 23** Рассказывал на Python meetup Chelyabinsk про лидерство и OSS.
+**2017 05 28** [Играл в НХТ в постановке «Секрет семейного счастья»](https://www.youtube.com/watch?v=vgsxhxneBcI&t=11s)
+
+### Связь со мной
+
+через [e-mail](mailto:digitalduke@gmail.com), [Facebook](http://fb.com/george.pirogov), 
+[LinkedIn](https://www.linkedin.com/in/georgepirogov/) или [GitHub](https://github.com/digitalduke)
