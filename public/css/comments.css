@@ -1,0 +1,169 @@
+.comment {
+    position: relative;
+    min-height: 60px;
+    padding-left: 60px;
+    margin: 24px 0;
+}
+
+.comment .gravatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 3px;
+    float: left;
+    margin-left: -60px;
+}
+
+.comment .gravatar >img {
+    width: 44px;
+    height: 44px;
+    border-radius: 3px;
+}
+
+.comment .comment-body {
+    position: relative;
+    border: 1px solid #CFD8DC;
+    border-radius: 0;
+}
+
+.comment-body::before, .comment-body::after {
+    position: absolute;
+    top: 11px;
+    left: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    content: "";
+    border-color: transparent;
+    border-style: solid solid outset;
+}
+
+.comment-body::before {
+    border-width: 8px;
+    border-right-color: #c0d3eb;
+}
+
+.comment-body::after {
+    margin-top: 1px;
+    margin-left: 2px;
+    border-width: 7px;
+}
+
+.comment .comment-header {
+    background-color: #c0d3eb;
+    border-bottom-color: #CACACA;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: rgb(88, 96, 105);
+    display: block;
+    float: left;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 44px;
+    line-height: 33px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.comment .comment-header a:link {
+    text-decoration: none;
+}
+
+.comment .comment-header a:hover {
+    border-bottom:1px solid;
+}
+
+.comment .comment-header .comment-user {
+    background-color: transparent;
+    color: rgb(88, 96, 105);
+    display: inline;
+    float: none;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: 0px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0px;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 0px;
+}
+
+.comment .comment-header .comment-date {
+    background-color: transparent;
+    color: #777;
+    display: inline;
+    float: none;
+    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 0px;
+    line-height: 33px;
+    margin: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0px;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 20em;
+}
+
+.comment .comment-text {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    color: #333;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 40px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0em;
+    position: static;
+    width: 96%;
+    word-wrap: break-word;
+}
+
+.comment .comment-text p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+.comment .comment-text pre {
+    border: 0px solid #ddd;
+    background-color: #eef;
+    padding: 0 .4em;
+}
+
+.comment .comment-text pre code {
+    border: 0px solid #ddd;
+}
+
+.comment .comment-text code {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    font-size: 85%;
+    padding: 0 .2em;
+}

@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
@@ -23,3 +26,34 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<div id="comments">
+    <h2>Комментарии</h2>
+    <div id="header">
+        Есть что сказать? Зайдите <a href="https://github.com/digitalduke/digitalduke.github.io/issues/{{page.commentIssueId}}" target="_blank"> на GitHub</a> и добавьте свой комментарий.
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function loadComments(data) {
+        for (var i=0; i<data.length; i++) {
+            var cuser = data[i].user.login;
+            var cuserlink = "https://www.github.com/" + data[i].user.login;
+            var clink = "https://github.com/digitalduke/digitalduke.github.io/issues/24#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
+            var cbody = data[i].body_html;
+            var cavatarlink = data[i].user.avatar_url;
+            var cdate = Date.parse(data[i].created_at).toString("yyyy-MM-dd HH:mm:ss");
+
+            $("#comments").append("<div class='comment'><a class='gravatar' href=\""+ cuserlink + "\" target='_blank'>" + '<img src="' + cavatarlink + '">' + "</a><div class='comment-body'><div class='comment-header'><a class='comment-user' href=\""+ cuserlink + "\">" + cuser + "</a><a class='comment-date' href=\"" + clink + "\">" + cdate + "</a></div><div class='comment-text'>" + cbody + "</div></div></div>");
+        }
+    }
+
+    $.ajax("https://api.github.com/repos/digitalduke/digitalduke.github.io/issues/24/comments", {
+        headers: {Accept: "application/vnd.github.full+json"},
+        success: function(msg) {
+            loadComments(msg);
+        }
+    });
+
+</script>
