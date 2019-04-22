@@ -51,6 +51,8 @@ layout: default
 
     $.ajax("https://api.github.com/repos/digitalduke/digitalduke.github.io/issues/{{page.commentIssueId}}/comments", {
         headers: {Accept: "application/vnd.github.full+json"},
+        cache: false,
+        dataType: "json",
         success: function(msg) {
             loadComments(msg);
         }
