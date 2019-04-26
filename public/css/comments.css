@@ -21,8 +21,9 @@
 
 .comment .comment-body {
     position: relative;
-    border: 1px solid #CFD8DC;
-    border-radius: 0;
+    border: 1px solid;
+    border-color: #c0d3eb;
+    border-radius: 3px;
 }
 
 .comment-body::before, .comment-body::after {
@@ -47,29 +48,21 @@
     margin-top: 1px;
     margin-left: 2px;
     border-width: 7px;
+    border-right-color: #f1f8ff;
 }
 
 .comment .comment-header {
-    background-color: #c0d3eb;
-    border-bottom-color: #CACACA;
+    background-color: #f1f8ff;
+    border-bottom-color: #c0d3eb;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     color: rgb(88, 96, 105);
     display: block;
     float: left;
-    font-family: helvetica, arial, freesans, clean, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    height: 44px;
-    line-height: 33px;
-    margin: 0px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 0px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 8px;
     width: 100%;
 }
 
@@ -86,21 +79,12 @@
     color: rgb(88, 96, 105);
     display: inline;
     float: none;
-    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    height: 0px;
-    line-height: 16px;
-    margin-left: 10px;
     margin-right: 10px;
-    overflow-x: visible;
-    overflow-y: visible;
-    padding: 0px;
-    text-overflow: clip;
-    white-space: nowrap;
-    width: 0px;
 }
 
 .comment .comment-header .comment-date {
@@ -108,20 +92,11 @@
     color: #777;
     display: inline;
     float: none;
-    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-size: 11px;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    height: 0px;
-    line-height: 33px;
-    margin: 0px;
-    overflow-x: visible;
-    overflow-y: visible;
-    padding: 0px;
-    text-overflow: clip;
-    white-space: nowrap;
-    width: 20em;
 }
 
 .comment .comment-text {
@@ -131,30 +106,20 @@
     background-image: none;
     background-origin: padding-box;
     color: #333;
-    display: block;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 40px;
-    overflow-x: visible;
-    overflow-y: visible;
-    padding: 0em;
-    position: static;
-    width: 96%;
-    word-wrap: break-word;
-}
-
-.comment .comment-text p {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    margin-left: 0em;
-    margin-right: 0em;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    margin-bottom: -5px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 
 .comment .comment-text pre {
-    border: 0px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+    font-size: 85%;
+    line-height: 1.45;
 }
 
 .comment .comment-text pre code {
@@ -166,4 +131,12 @@
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
+}
+
+.pl-k {
+    color: #d73a49;
+}
+
+.pl-e, .pl-en {
+    color: #6f42c1;
 }

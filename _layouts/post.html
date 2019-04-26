@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
 <div class="post">
@@ -51,6 +51,8 @@ layout: default
 
     $.ajax("https://api.github.com/repos/digitalduke/digitalduke.github.io/issues/{{page.commentIssueId}}/comments", {
         headers: {Accept: "application/vnd.github.full+json"},
+        cache: false,
+        dataType: "json",
         success: function(msg) {
             loadComments(msg);
         }
