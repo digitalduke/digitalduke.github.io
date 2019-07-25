@@ -9,7 +9,7 @@ All content is licensed under a <a rel="license" href="http://creativecommons.or
 
 ### install dependencies
 ```shell
-$ sudo apt install ruby-dev
+$ sudo apt install ruby-dev zlib1g-dev
 $ sudo gem install bundler jekyll github-pages
 ```
 
