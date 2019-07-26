@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's speak English
-commentIssueId: 26
+commentIssueId: 34
 ---
 
 Some time ago I started this blog for writing small notes about working issues. But... in a half year I wrote only two posts. I can say that I don't have time to write, or I don't have any interesting working issues I can write about. This is not a truth. I think that I don't see a sense for it.
