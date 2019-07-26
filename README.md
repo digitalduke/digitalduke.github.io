@@ -15,5 +15,5 @@ $ sudo gem install bundler jekyll github-pages
 
 ### run
 ```shell
-$ bundle exec jekyll serve
+$ jekyll serve
 ```
