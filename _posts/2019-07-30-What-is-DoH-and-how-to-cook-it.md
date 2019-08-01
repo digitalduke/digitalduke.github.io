@@ -26,7 +26,7 @@ How does an operating system know about resolver? There are two ways. You may co
 
 And this is a problem. Even if you configured your preferred DNS server. Because the DNS protocol does not have any security. Questions and answers (queries) between your device and DNS service can be tracked or spoofed. Network devices of ISP's, such as routers, for example, can read DNS queries without any problem. Also, they can manipulate them. We are under risks and often don’t know about it.
 
-Luckily there is the technology to prevent it - its name is [DNS over HTTPS (DoH)](https://tools.ietf.org/html/rfc8484). It encapsulates DNS queries into secured and encrypted HTTPS requests. As a result, these queries stay anonymous. Already now you may start to use it. It supported by giants such as Google, Mozilla, Cloudflare and so on. This is yet young technology but I recommend to start using it.
+Luckily there is the technology to prevent it - its name is [DNS over HTTPS (DoH)](https://tools.ietf.org/html/rfc8484). It encapsulates DNS queries into secured and encrypted HTTPS requests. As a result, these queries become encrypted and confidential. Already now you may start to use it. It supported by giants such as Google, Mozilla, Cloudflare and so on. This is yet young technology but I recommend to start using it.
 
 If you use Firefox, ensure that you have version 62 or above. Go to the menu, choose **Tools**, and then **Preferences**. Go to the **General** section and into the **Network Settings**. Select *Enable DNS over HTTPS*, then types DoH resolver address. If you prefer Mozilla products you may use *https://mozilla.cloudflare-dns.com/dns-query*.
 
