@@ -1,6 +1,4 @@
 title: Цифровые байки
-tagline: 'блог Егора Пирогова'
-description: 'блог Егора Пирогова'
 
 url: https://digitalduke.blog
 baseurl: ""
@@ -12,8 +10,6 @@ author:
 paginate: 5
 
 permalink: /:title/
-
-version: v1.2.0
 
 kramdown:
   input: GFM
