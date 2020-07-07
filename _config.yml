@@ -1,6 +1,4 @@
-title: digitalduke
-tagline: 'personal blog'
-description: 'personal blog'
+title: Цифровые байки
 
 url: https://digitalduke.blog
 baseurl: ""
@@ -12,8 +10,6 @@ author:
 paginate: 5
 
 permalink: /:title/
-
-version: v1.2.0
 
 kramdown:
   input: GFM
