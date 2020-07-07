@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Главная страница
 ---
 
 <div class="posts">
@@ -21,17 +21,17 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr;&nbsp;prev</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr;&nbsp;туда</a>
   {% else %}
-    <span class="pagination-item older">&larr;&nbsp;prev</span>
+    <span class="pagination-item older">&larr;&nbsp;туда</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">next&nbsp;&rarr;</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">сюда&nbsp;&rarr;</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">next&nbsp;&rarr;</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">сюда&nbsp;&rarr;</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">next&nbsp;&rarr;</span>
+    <span class="pagination-item newer">сюда&nbsp;&rarr;</span>
   {% endif %}
 </div>
